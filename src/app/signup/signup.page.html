@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button>back</ion-back-button>
+    </ion-buttons>
+    <ion-title>Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div class="wrapper">
+
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input type="text" placeholder="Name" ></ion-input> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="text" placeholder="Email" [(ngModel)]="email"></ion-input> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type="text" placeholder="Password" [(ngModel)]="password"></ion-input> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Academic ID</ion-label>
+      <ion-input type="text" placeholder="Student or faculty ID" ></ion-input> 
+    </ion-item>    
+    
+
+    <ion-item>
+      <ion-label position="stacked">Member Type</ion-label>
+      <ion-select placeholder="Select One" [(ngModel)]="engineering">
+        <ion-select-option value="Faculty">Faculty</ion-select-option>
+        <ion-select-option value="Student">Student</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    
+    <ion-item>
+      
+      <ion-label position="stacked">Collage</ion-label>
+      <ion-select placeholder="Select One">
+          <ion-select-option value="IT">IT</ion-select-option>
+        <ion-select-option value="Business">Business</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Department</ion-label>
+      <ion-select placeholder="Select One">
+          <ion-select-option value="Engineering">Engineering</ion-select-option>
+          <ion-select-option value="Computer Science">Computer Science</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  
+    
+
+    <ion-button color="secondary" expand="full" (click)="SignUp()">Registration</ion-button>
+  </div>
+
+  <p class="text" (click)="gotosignin()">
+    Already a member ? Sign In</p>
+</ion-content>
+

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button>back</ion-back-button>
+    </ion-buttons>
+    <ion-title>Delete Subjects</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="wrapper">
+
+    <ion-item>
+      <ion-label position="stacked">Subject Name</ion-label>
+      <ion-input type="text" placeholder="Subject Name"></ion-input> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Subject ID</ion-label>
+      <ion-input type="text" placeholder="Subject ID"></ion-input> 
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Semester </ion-label>
+      <ion-select placeholder="Select One">
+          <ion-select-option value="Semester One">Semester One</ion-select-option>
+        <ion-select-option value="Semester Two">Semester Two</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <br>
+    <ion-button  color="secondary" expand="full" >Delete Subject</ion-button>
+  </div>
+
+  <p>Copyright 2020</p>
+</ion-content>
