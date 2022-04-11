@@ -50,22 +50,22 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'profile',
+        path: 'inbox',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../profile/profile.module').then(m => m.ProfilePageModule)
+              import('../inbox/inbox.module').then(m => m.InboxPageModule)
           }
         ]
       },
       {
-        path: 'settings',
+        path: 'myrequest',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../fa-profile/fa-profile.module').then(m => m.FaProfilePageModule)
+              import('../myrequest/myrequest.module').then(m => m.MyrequestPageModule)
           }
         ]
       },

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "academic-6c207": {
+      "hosting": {
+        "app": [
+          "academic-6c207"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "academic-6c207"
+  }
+}

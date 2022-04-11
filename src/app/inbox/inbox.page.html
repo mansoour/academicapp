@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button>back</ion-back-button>
+    </ion-buttons>
+    <ion-title>Inbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="wrapper">
+
+<div class="buttonwrap">
+    <ion-button  [routerLink]="['/sendmessage']" color="secondary">
+      Send New message to faculty
+      <ion-icon slot="end" name="chatbubble-ellipses-outline"></ion-icon>
+    </ion-button>
+
+  </div>
+
+
+    <ion-item [routerLink]="['/message']">
+      <ion-label>
+        <h3>Messages title</h3>
+        <p>Date</p>
+      </ion-label>
+    </ion-item>
+
+    <br>
+
+    <ion-item [routerLink]="['/message']">
+      <ion-label>
+        <h3>Messages title</h3>
+        <p>Date</p>
+      </ion-label>
+    </ion-item>
+
+    <br>
+
+    <ion-item [routerLink]="['/message']">
+      <ion-label>
+        <h3>Messages title</h3>
+        <p>Date</p>
+      </ion-label>
+    </ion-item>
+
+    <br>
+    
+ 
+  </div>
+</ion-content>

@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: () => import('./tab-bar/tab-bar.module').then(m => m.TabBarPageModule)
   },
   {
+    path: '',
+    loadChildren: () => import('./fatabs/fatabs.module').then(m => m.FatabsPageModule)
+  },
+  {
     path: 'signup',
     loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
   },
@@ -70,6 +74,30 @@ const routes: Routes = [
   {
     path: 'modifyrequests',
     loadChildren: () => import('./modifyrequests/modifyrequests.module').then( m => m.ModifyrequestsPageModule)
+  },
+  {
+    path: 'inbox',
+    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
+  },
+  {
+    path: 'myrequest',
+    loadChildren: () => import('./myrequest/myrequest.module').then( m => m.MyrequestPageModule)
+  },
+  {
+    path: 'message',
+    loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
+  },
+  {
+    path: 'sendmessage',
+    loadChildren: () => import('./sendmessage/sendmessage.module').then( m => m.SendmessagePageModule)
+  },
+  {
+    path: 'fatabs',
+    loadChildren: () => import('./fatabs/fatabs.module').then( m => m.FatabsPageModule)
+  },
+  {
+    path: 'fa-inbox',
+    loadChildren: () => import('./fa-inbox/fa-inbox.module').then( m => m.FaInboxPageModule)
   },
 ];
 

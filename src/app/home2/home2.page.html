@@ -9,8 +9,9 @@
 
 <ion-content [fullscreen]="true">
   <h1>Welcome to Student</h1>
-  <ion-button  color="secondary" expand="full" (click)="addsubject()">Add Subjects</ion-button>
-  <ion-button  color="secondary" expand="full" (click)="deletesubject()">Delete Subjects</ion-button>
-  <ion-button  color="secondary" expand="full" (click)="modify()">Modify Department</ion-button>
+  <ion-button  color="secondary" expand="full" [routerLink]="['/addsubject']">Add Subjects</ion-button>
+  <ion-button  color="secondary" expand="full" [routerLink]="['/deletesupject']" >Delete Subjects</ion-button>
+  <ion-button  color="secondary" expand="full"[routerLink]="['/modify']" >Modify Department</ion-button>
+
 </ion-content>
 

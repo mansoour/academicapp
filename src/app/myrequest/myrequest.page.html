@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button>back</ion-back-button>
+    </ion-buttons>
+    <ion-title>My Request</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="wrapper">
+
+    <ion-item detail>
+      <ion-label>
+       Pending Requests
+      </ion-label>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/note.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>Request title</h3>
+        <p>Pending</p>
+        <p>Date</p>
+      </ion-label>
+      <ion-icon name="hourglass-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <br>
+    <ion-item detail>
+      <ion-label>
+       Approved Requests
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/note.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>Request title</h3>
+        <p>Approved</p>
+        <p>Date</p>
+      </ion-label>
+      <ion-icon name="checkmark-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <br>
+    <ion-item detail>
+      <ion-label>
+      Declined Requests
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/note.png">
+      </ion-thumbnail>
+      <ion-label>
+        <h3>Request title</h3>
+        <p>Declined</p>
+        <p>Date</p>
+      </ion-label>
+      <ion-icon name="close-outline" slot="end"></ion-icon>
+    </ion-item>
+    
+  
+  </div>
+</ion-content>
